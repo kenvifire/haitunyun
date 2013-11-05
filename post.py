@@ -4,7 +4,7 @@ import os,sys
 import  MySQLdb
 
 try:
-   db = MySQLdb.connect(host ='127.0.0.1', user='wordpress', passwd='wordpress6826', db ='wordpress')
+   db = MySQLdb.connect(host ='127.0.0.1', user='wordpress', passwd='wordpress6826', db ='wordpress',charset='utf8')
 except MySQLdb.ERROR,e:
    print "Error %d:%s"%(e.args[0],e.args[1])
    exit(1)
